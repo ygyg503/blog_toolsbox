@@ -3,14 +3,16 @@ blog_toolsbox
 
 在学习使用Jekyll搭建个人博客时候写的一些工具，作为学习积累哈哈
 
+
+
 ### 一.简易Jekyll调试脚本 v0.1
 
 - 自动启动 jekyll build --watch
 - 自动启动 jekyll serve 
 - 自动启动firefox 并且打开localhost:4000
 
-{% highlight python linenos%}
 
+```
 #!/bin/bash
 #制定路径
 Path=$1
@@ -27,9 +29,7 @@ if [ $? -eq '0' ];then
     cd $Build_serve_path 
     jekyll serve 
 fi
-
-{% endhighlight%}
-
+```
 
 ---
 
